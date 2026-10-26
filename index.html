@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Liv Services recrute un(e) Chargé(e) de partenariats terrain</title>
+<meta name="description" content="Liv Services recrute à Yaoundé un(e) chargé(e) de partenariats terrain pour convaincre restaurants et commerces de rejoindre l'aventure.">
+<meta property="og:title" content="Liv Services recrute un(e) Chargé(e) de partenariats terrain">
+<meta property="og:description" content="Sur le terrain à Yaoundé, tu fais signer nos futurs partenaires. Envoie ton CV à contact@livservice.com">
+<meta property="og:image" content="images/logo.png">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#0b9a48; --green-d:#067a37; --green-dd:#04542a; --green-l:#e8f7ee;
+  --yellow:#ffc20e; --orange:#ff7a00; --ink:#10261a; --muted:#4d6457;
+  --bg:#f6faf7; --card:#ffffff; --line:#d9e9df;
+  --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Montserrat,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+section{padding:72px 0}
+h2{font-size:clamp(26px,5vw,38px);font-weight:900;line-height:1.15;text-transform:uppercase;letter-spacing:-.5px}
+h2 .hl{color:var(--green)}
+.kicker{display:inline-block;background:var(--yellow);color:var(--green-dd);font-weight:800;font-size:13px;text-transform:uppercase;padding:6px 14px;border-radius:6px;margin-bottom:14px;letter-spacing:.5px}
+.lead{color:var(--muted);font-size:17px;max-width:680px;margin-top:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:800;text-decoration:none;padding:15px 26px;border-radius:999px;border:0;cursor:pointer;font-family:inherit;font-size:15px;text-transform:uppercase;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-y{background:var(--yellow);color:var(--green-dd);box-shadow:0 6px 0 #c99500}
+.btn-y:active{transform:translateY(3px);box-shadow:0 3px 0 #c99500}
+.btn-o{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.7)}
+
+/* HERO */
+.hero{position:relative;background:radial-gradient(1200px 600px at 80% 0%,#15b85c 0%,var(--green) 45%,var(--green-dd) 100%);color:#fff;padding:24px 0 90px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.05) 0 40px,transparent 40px 120px);pointer-events:none}
+.topbar{display:flex;align-items:center;justify-content:space-between;position:relative;z-index:2}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;text-decoration:none}
+.brand img{width:46px;height:46px;border-radius:12px;background:#fff;padding:4px;object-fit:contain}
+.socials{display:flex;gap:8px;align-items:center;font-weight:800;font-size:14px}
+.socials a{width:34px;height:34px;border-radius:50%;background:#fff;color:var(--green-d);display:grid;place-items:center;text-decoration:none;font-size:13px;font-weight:900}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;margin-top:46px;position:relative;z-index:2}
+.hero h1{font-weight:900;line-height:.95;text-transform:uppercase}
+.hero h1 .s1{display:block;font-size:clamp(28px,5vw,44px)}
+.hero h1 .s2{display:block;font-size:clamp(60px,13vw,112px);color:var(--yellow);letter-spacing:-2px}
+.pill{display:inline-block;margin:18px 0 6px;background:var(--yellow);color:var(--green-dd);font-weight:900;font-size:clamp(15px,3.2vw,22px);padding:10px 22px;border-radius:999px;text-transform:uppercase;box-shadow:0 0 0 5px rgba(255,255,255,.18)}
+.loc{display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:15px;margin-left:6px;background:rgba(0,0,0,.18);padding:6px 12px;border-radius:999px}
+.hero p.tag{font-weight:800;text-transform:uppercase;font-size:clamp(14px,2.6vw,17px);margin:18px 0 26px;max-width:540px}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+
+/* hero animated street */
+.street{position:relative;aspect-ratio:1/1;max-width:440px;justify-self:center;width:100%}
+.street svg{width:100%;height:100%;overflow:visible}
+.rider{offset-path:path("M60 330 C 140 330, 150 220, 230 220 S 330 110, 380 90");animation:ride 6s ease-in-out infinite;offset-rotate:0deg}
+@keyframes ride{0%{offset-distance:0%}45%{offset-distance:100%}55%{offset-distance:100%}100%{offset-distance:0%}}
+.ping{animation:ping 2s ease-out infinite;transform-origin:center;transform-box:fill-box}
+@keyframes ping{0%{transform:scale(.6);opacity:.9}100%{transform:scale(2.2);opacity:0}}
+.badge-float{position:absolute;background:#fff;color:var(--ink);border-radius:14px;padding:10px 14px;font-weight:800;font-size:13px;box-shadow:0 10px 30px rgba(0,0,0,.2);animation:float 4s ease-in-out infinite}
+.badge-float small{display:block;color:var(--muted);font-weight:600;font-size:11px}
+.b1{top:6%;left:0}
+.b2{bottom:10%;right:-2%;animation-delay:1.3s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+/* ticker */
+.ticker{background:var(--yellow);color:var(--green-dd);font-weight:900;text-transform:uppercase;overflow:hidden;white-space:nowrap;padding:12px 0;font-size:15px;transform:rotate(-1.2deg);margin-top:-22px;position:relative;z-index:3;box-shadow:0 6px 20px rgba(0,0,0,.12)}
+.ticker span{display:inline-block;padding-left:100%;animation:tick 28s linear infinite}
+@keyframes tick{to{transform:translateX(-100%)}}
+
+/* about */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px}
+.gallery figure{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:3/4;background:var(--green-l)}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gallery figure:hover img{transform:scale(1.06)}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 12px 12px;background:linear-gradient(transparent,rgba(0,0,0,.7));color:#fff;font-weight:800;font-size:14px}
+.about-txt{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:34px}
+.about-txt p{color:var(--muted)}
+.about-txt strong{color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{background:var(--green-l);color:var(--green-d);font-weight:700;font-size:13px;padding:6px 12px;border-radius:999px}
+.why{background:var(--green-dd);color:#fff;border-radius:var(--r);padding:24px}
+.why h3{font-size:18px;font-weight:900;text-transform:uppercase;margin-bottom:10px;color:var(--yellow)}
+.why li{list-style:none;padding:8px 0;border-bottom:1px dashed rgba(255,255,255,.2);font-weight:600;font-size:15px}
+.why li:last-child{border:0}
+
+/* role */
+.role{background:#fff}
+.role-box{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:30px}
+.vs{border-radius:var(--r);padding:24px;border:2px solid var(--line)}
+.vs.yes{border-color:var(--green);background:var(--green-l)}
+.vs h3{font-weight:900;font-size:17px;text-transform:uppercase;margin-bottom:10px}
+.vs.yes h3{color:var(--green-d)}
+.vs.no h3{color:#b54708}
+.vs li{list-style:none;padding:6px 0 6px 28px;position:relative;font-weight:600}
+.vs.yes li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:900}
+.vs.no li::before{content:"✕";position:absolute;left:0;color:#b54708;font-weight:900}
+
+/* journey map */
+.journey{background:linear-gradient(180deg,var(--green-dd),#033b1d);color:#fff}
+.journey .lead{color:#cfe9da}
+.map-wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;margin-top:34px;align-items:stretch}
+.map{position:relative;background:#0a6b35;border-radius:var(--r);padding:10px;overflow:hidden;min-height:340px}
+.map svg{width:100%;height:100%;display:block}
+.stop{cursor:pointer}
+.stop circle.dot{fill:#fff;stroke:var(--yellow);stroke-width:4;transition:r .2s}
+.stop text{fill:#fff;font-weight:800;font-size:13px;font-family:Montserrat}
+.stop .num{fill:var(--green-dd);font-size:12px;font-weight:900}
+.stop.active circle.dot{fill:var(--yellow);stroke:#fff}
+.stop:hover circle.dot{r:17}
+#moto{transition:transform .9s cubic-bezier(.6,.05,.3,1)}
+.panel{background:#fff;color:var(--ink);border-radius:var(--r);padding:26px;display:flex;flex-direction:column}
+.panel .time{display:inline-block;background:var(--yellow);color:var(--green-dd);font-weight:900;padding:4px 12px;border-radius:999px;font-size:13px;align-self:flex-start}
+.panel h3{font-size:22px;font-weight:900;margin:12px 0 4px;text-transform:uppercase}
+.panel .where{color:var(--green-d);font-weight:700;font-size:14px;margin-bottom:12px}
+.panel p{color:var(--muted)}
+.panel ul{margin-top:12px}
+.panel li{list-style:none;padding:5px 0 5px 22px;position:relative;font-weight:600;font-size:15px}
+.panel li::before{content:"→";position:absolute;left:0;color:var(--green);font-weight:900}
+.panel-nav{display:flex;gap:10px;margin-top:auto;padding-top:20px}
+.panel-nav button{flex:1;border:2px solid var(--green);background:#fff;color:var(--green-d);font-weight:800;font-family:inherit;padding:11px;border-radius:12px;cursor:pointer;font-size:14px}
+.panel-nav button.primary{background:var(--green);color:#fff}
+.panel-nav button:disabled{opacity:.35;cursor:default}
+.fade{animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.progress{display:flex;gap:6px;margin-top:16px}
+.progress i{flex:1;height:5px;border-radius:5px;background:rgba(255,255,255,.2)}
+.progress i.on{background:var(--yellow)}
+
+/* missions */
+.missions{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:30px}
+.mission{background:#fff;border:2px solid var(--line);border-radius:var(--r);overflow:hidden;transition:border-color .2s}
+.mission.open{border-color:var(--green)}
+.mission button{all:unset;cursor:pointer;display:flex;gap:14px;align-items:center;width:100%;padding:20px;box-sizing:border-box}
+.mission .ic{flex:0 0 52px;height:52px;border-radius:14px;background:var(--green);display:grid;place-items:center;font-size:24px}
+.mission h3{font-size:17px;font-weight:900;text-transform:uppercase;line-height:1.2}
+.mission small{display:block;color:var(--muted);font-weight:600;font-size:13px;text-transform:none;margin-top:3px}
+.mission .plus{margin-left:auto;width:30px;height:30px;border-radius:50%;background:var(--green-l);color:var(--green-d);display:grid;place-items:center;font-weight:900;transition:transform .25s;flex:0 0 30px}
+.mission.open .plus{transform:rotate(45deg);background:var(--yellow)}
+.mission .body{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.mission .inner{padding:0 20px 20px}
+.mission li{list-style:none;padding:5px 0 5px 22px;position:relative;font-size:15px}
+.mission li::before{content:"•";position:absolute;left:6px;color:var(--green);font-weight:900}
+.expect{margin-top:10px;background:var(--green-l);border-left:4px solid var(--green);padding:10px 12px;border-radius:8px;font-size:14px}
+
+/* pitch game */
+.game{background:#fff}
+.game-card{margin-top:30px;background:var(--bg);border:2px solid var(--line);border-radius:22px;padding:26px;max-width:760px}
+.scene{display:flex;gap:14px;align-items:flex-start}
+.avatar{flex:0 0 56px;height:56px;border-radius:50%;background:var(--orange);display:grid;place-items:center;font-size:28px}
+.bubble{background:#fff;border-radius:4px 18px 18px 18px;padding:14px 18px;font-weight:700;box-shadow:0 4px 14px rgba(0,0,0,.06);position:relative}
+.bubble small{display:block;color:var(--muted);font-weight:600;font-size:12px;margin-bottom:4px}
+.choices{display:grid;gap:10px;margin-top:18px}
+.choice{text-align:left;border:2px solid var(--line);background:#fff;border-radius:14px;padding:14px 16px;font-family:inherit;font-weight:600;font-size:15px;cursor:pointer;color:var(--ink);transition:border-color .15s,background .15s}
+.choice:hover:not(:disabled){border-color:var(--green)}
+.choice.good{border-color:var(--green);background:var(--green-l)}
+.choice.bad{border-color:#e48a3a;background:#fff3e8}
+.choice:disabled{cursor:default}
+.feedback{margin-top:14px;padding:14px;border-radius:12px;font-size:15px;display:none}
+.feedback.show{display:block;animation:fade .3s}
+.feedback.ok{background:var(--green-l);color:var(--green-dd)}
+.feedback.ko{background:#fff3e8;color:#8a3b00}
+.game-foot{display:flex;justify-content:space-between;align-items:center;margin-top:18px;gap:10px;flex-wrap:wrap}
+.score{font-weight:900;color:var(--green-d)}
+.signed{display:flex;gap:4px}
+.signed span{width:26px;height:26px;border-radius:7px;background:var(--line);display:grid;place-items:center;font-size:14px}
+.signed span.ok{background:var(--green);color:#fff}
+.btn-g{background:var(--green);color:#fff;box-shadow:0 5px 0 var(--green-dd)}
+
+/* profile check */
+.check-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:28px}
+.ck{display:flex;gap:14px;align-items:center;background:#fff;border:2px solid var(--line);border-radius:16px;padding:16px;cursor:pointer;user-select:none;transition:all .2s}
+.ck input{display:none}
+.ck .box{flex:0 0 28px;height:28px;border-radius:8px;border:2px solid var(--green);display:grid;place-items:center;font-weight:900;color:#fff;transition:background .2s}
+.ck.on{border-color:var(--green);background:var(--green-l)}
+.ck.on .box{background:var(--green)}
+.ck b{display:block;font-size:15px}
+.ck span.d{display:block;color:var(--muted);font-size:13px;font-weight:500}
+.meter{margin-top:22px;background:#fff;border-radius:16px;padding:18px;border:2px solid var(--line)}
+.bar{height:14px;border-radius:999px;background:var(--line);overflow:hidden;margin:10px 0}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--green),var(--yellow));transition:width .4s}
+.meter p{font-weight:700}
+.plus-note{margin-top:12px;color:var(--muted);font-size:14px}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px;counter-reset:s}
+.step{background:#fff;border-radius:var(--r);padding:22px;border:2px solid var(--line);position:relative}
+.step::before{counter-increment:s;content:counter(s);position:absolute;top:-16px;left:20px;width:34px;height:34px;border-radius:50%;background:var(--yellow);color:var(--green-dd);font-weight:900;display:grid;place-items:center}
+.step h3{font-size:16px;font-weight:900;text-transform:uppercase;margin:8px 0 6px}
+.step p{color:var(--muted);font-size:15px}
+
+/* apply */
+.apply{background:var(--green);color:#fff;text-align:center;position:relative;overflow:hidden}
+.apply::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.06) 0 40px,transparent 40px 120px)}
+.apply .wrap{position:relative}
+.mailbox{display:inline-block;background:var(--yellow);color:var(--green-dd);border-radius:22px;padding:26px 30px;margin-top:24px;max-width:100%}
+.mailbox .lbl{font-weight:800;text-transform:uppercase;font-size:14px}
+.mailbox a.mail{display:block;font-size:clamp(20px,5vw,34px);font-weight:900;font-style:italic;text-decoration:underline;text-underline-offset:5px;margin:6px 0 14px;word-break:break-all}
+.mail-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.mail-actions .btn{font-size:13px;padding:12px 18px}
+.btn-dark{background:var(--green-dd);color:#fff}
+.dossier{max-width:620px;margin:26px auto 0;text-align:left;background:rgba(0,0,0,.15);border-radius:16px;padding:18px 20px}
+.dossier li{list-style:none;padding:5px 0 5px 24px;position:relative;font-weight:600}
+.dossier li::before{content:"📎";position:absolute;left:0}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:12px 20px;border-radius:999px;font-weight:700;opacity:0;pointer-events:none;transition:all .3s;z-index:60}
+.toast.show{opacity:1;transform:translateX(-50%)}
+
+footer{background:var(--green-dd);color:#cfe9da;text-align:center;padding:26px 18px 100px;font-size:14px;font-weight:600}
+.sticky{position:fixed;left:0;right:0;bottom:0;padding:12px 18px calc(12px + env(safe-area-inset-bottom));background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-top:1px solid var(--line);display:flex;justify-content:center;z-index:50;transform:translateY(110%);transition:transform .3s}
+.sticky.show{transform:none}
+.sticky .btn{width:100%;max-width:420px;justify-content:center}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s}
+.reveal.in{opacity:1;transform:none}
+
+
+/* field video */
+.field{background:#fff;border-top:1px solid var(--line)}
+.field-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:center}
+.phone{position:relative;max-width:320px;margin:0 auto;border-radius:34px;padding:10px;background:#0d1f15;box-shadow:0 24px 60px rgba(6,84,42,.35)}
+.phone video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:26px;display:block;background:#000;cursor:pointer}
+.sound{position:absolute;bottom:24px;right:24px;border:0;background:var(--yellow);color:var(--green-dd);font-weight:800;font-family:inherit;padding:8px 14px;border-radius:999px;cursor:pointer;font-size:13px}
+.partner-card{display:flex;gap:14px;align-items:center;margin-top:22px;background:var(--green-l);border-radius:16px;padding:12px}
+.partner-card img{width:76px;height:96px;object-fit:cover;object-position:top;border-radius:10px;flex:0 0 76px}
+.partner-card b{display:block;font-weight:900;text-transform:uppercase;color:var(--green-d)}
+.partner-card span{font-size:14px;color:var(--muted)}
+@media (max-width:860px){.field-grid{grid-template-columns:1fr}.phone{max-width:280px}}
+@media (max-width:860px){
+  .hero-grid,.map-wrap,.about-txt,.role-box{grid-template-columns:1fr}
+  .street{max-width:340px;order:-1}
+  .gallery{gap:8px}.gallery figcaption{font-size:11px;padding:24px 8px 8px}
+  .missions,.check-grid,.steps{grid-template-columns:1fr}
+  .steps{gap:26px}
+  section{padding:56px 0}
+  .socials .name{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="topbar">
+      <a class="brand" href="#"><img src="images/logo.png" alt="Logo Liv Services">Liv services</a>
+      <div class="socials">
+        <a href="https://www.facebook.com/share/1EQRnmpQCa/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com/liv.services?srtk=MWsycGsycXMzZDZhNw%3D%3D" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+        <a href="https://www.tiktok.com/@_liv_eats_?_r=1&amp;_t=ZS-9ActK0Abysu" target="_blank" rel="noopener" aria-label="TikTok">tk</a>
+        <span class="name">LIV EATS</span>
+      </div>
+    </div>
+
+    <div class="hero-grid">
+      <div>
+        <h1><span class="s1">Liv Services</span><span class="s2">Recrute</span></h1>
+        <div class="pill">Un(e) chargé(e) de partenariats terrain</div>
+        <div><span class="loc">📍 Yaoundé</span></div>
+        <p class="tag">Tu aimes le contact, tu sais convaincre et tu n'as pas peur du terrain ? Rejoins notre équipe !</p>
+        <div class="hero-ctas">
+          <a class="btn btn-y" href="#postuler">Postuler</a>
+          <a class="btn btn-o" href="#journee">Voir une journée type</a>
+        </div>
+      </div>
+
+      <div class="street" aria-hidden="true">
+        <div class="badge-float b1">🤝 Partenariat signé !<small>Restaurant · Bastos</small></div>
+        <div class="badge-float b2">📍 Prochaine visite<small>Boutique · Mvan</small></div>
+        <svg viewBox="0 0 440 420">
+          <defs>
+            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="2"/></pattern>
+          </defs>
+          <rect x="10" y="20" width="420" height="380" rx="30" fill="rgba(0,0,0,.18)"/>
+          <rect x="10" y="20" width="420" height="380" rx="30" fill="url(#grid)"/>
+          <path d="M60 330 C 140 330, 150 220, 230 220 S 330 110, 380 90" fill="none" stroke="#ffc20e" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 16"/>
+          <!-- shops -->
+          <g transform="translate(36 330)"><circle class="ping" r="18" fill="#ffc20e"/><circle r="14" fill="#fff"/><text y="5" text-anchor="middle" font-size="14">🍲</text></g>
+          <g transform="translate(230 220)"><circle class="ping" r="18" fill="#ffc20e" style="animation-delay:.7s"/><circle r="14" fill="#fff"/><text y="5" text-anchor="middle" font-size="14">🏪</text></g>
+          <g transform="translate(390 84)"><circle class="ping" r="18" fill="#ffc20e" style="animation-delay:1.4s"/><circle r="14" fill="#fff"/><text y="5" text-anchor="middle" font-size="14">☕</text></g>
+          <!-- rider -->
+          <g class="rider"><circle r="24" fill="#fff"/><text y="9" text-anchor="middle" font-size="26">🧑🏾‍💼</text></g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true"><span>Prospection ★ Négociation ★ Signature ★ Suivi des partenaires ★ 100 % terrain ★ Yaoundé ★ Restaurants ★ Commerces ★ Boutiques ★ Prospection ★ Négociation ★ Signature ★ Suivi des partenaires ★ 100 % terrain ★ Yaoundé ★</span></div>
+
+<!-- ABOUT -->
+<section id="apropos">
+  <div class="wrap">
+    <span class="kicker">Qui sommes-nous</span>
+    <h2>À propos de <span class="hl">Liv Services</span></h2>
+    <div class="gallery reveal">
+      <figure><img src="images/livraison.jpg" alt="Un livreur Liv Eats remet une commande à une cliente" loading="lazy"><figcaption>Livraison à domicile</figcaption></figure>
+      <figure><img src="images/app.jpg" alt="L'application Liv Eats et un sac de commande" loading="lazy"><figcaption>L'application Liv Eats</figcaption></figure>
+      <figure><img src="images/partenariat.jpg" alt="Partenariat Alpha Motors et Liv Eats" loading="lazy"><figcaption>Alpha Motors × Liv Eats</figcaption></figure>
+    </div>
+    <div class="about-txt reveal">
+      <div>
+        <p><strong>Liv Services</strong> est une entreprise camerounaise de <strong>logistique et de livraison urbaine</strong>, basée à <strong>Yaoundé</strong>.</p>
+        <p style="margin-top:10px">Avec <strong>Liv Eats</strong> et nos plateformes marchands et livreurs, nous connectons les restaurateurs, les commerçants et les consommateurs.</p>
+        <div class="chips"><span class="chip">Cameroun</span><span class="chip">Yaoundé</span><span class="chip">Livraison urbaine</span><span class="chip">Digital</span></div>
+      </div>
+      <div class="why">
+        <h3>Ce que tu vas proposer aux commerçants</h3>
+        <ul>
+          <li>🛵 Une flotte de livreurs réactive</li>
+          <li>📱 Une visibilité sur l'application Liv Eats</li>
+          <li>📦 Une plateforme pour gérer leurs commandes</li>
+          <li>📈 De nouveaux clients, sans gérer la livraison</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROLE -->
+<section class="role">
+  <div class="wrap">
+    <span class="kicker">Le poste</span>
+    <h2>Ton terrain de jeu : <span class="hl">les partenaires</span></h2>
+    <p class="lead">Tu es la personne qui fait entrer de nouveaux restaurants, commerces et boutiques dans l'écosystème Liv Services. Tu passes l'essentiel de ton temps dehors, en face à face avec les gérants.</p>
+    <div class="role-box reveal">
+      <div class="vs yes">
+        <h3>Ce que tu fais</h3>
+        <ul>
+          <li>Tu rencontres les gérants de restaurants et de commerces</li>
+          <li>Tu présentes l'offre et tu fais signer</li>
+          <li>Tu accompagnes les nouveaux partenaires</li>
+          <li>Tu rends compte de ton activité</li>
+        </ul>
+      </div>
+      <div class="vs no">
+        <h3>Ce que tu ne fais pas</h3>
+        <ul>
+          <li>Pas de vente aux clients particuliers</li>
+          <li>Pas de livraison</li>
+          <li>Pas de gestion des réseaux sociaux</li>
+          <li>Pas de journée entière derrière un bureau</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="field" id="terrain">
+  <div class="wrap field-grid">
+    <div class="phone reveal">
+      <video id="vid" src="images/terrain.mp4" poster="images/terrain-poster.jpg" playsinline muted loop preload="metadata"></video>
+      <button class="sound" id="sound" type="button" aria-label="Activer le son">🔇 Son</button>
+    </div>
+    <div class="reveal">
+      <span class="kicker">En images</span>
+      <h2>L'équipe Liv <span class="hl">sur le terrain</span></h2>
+      <p class="lead">Distribution de flyers, échanges avec le public, rencontres avec les gérants et les partenaires : voilà à quoi ressemble le terrain chez Liv Services.</p>
+      <div class="partner-card">
+        <img src="images/partenariat.jpg" alt="Alpha Motors × Liv Eats" loading="lazy">
+        <div><b>Alpha Motors × Liv Eats</b><span>Chaque partenariat commence par une rencontre. Demain, c'est toi qui les décroches.</span></div>
+      </div>
+      <a class="btn btn-y" href="#postuler" style="margin-top:22px">Je veux ce poste</a>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section class="journey" id="journee">
+  <div class="wrap">
+    <span class="kicker">Sur le terrain</span>
+    <h2>Une journée type <span style="color:var(--yellow)">dans Yaoundé</span></h2>
+    <p class="lead">Touche chaque étape de la carte pour suivre ta tournée.</p>
+
+    <div class="map-wrap">
+      <div class="map">
+        <svg viewBox="0 0 500 380" id="mapSvg" role="img" aria-label="Carte de la tournée">
+          <defs><pattern id="g2" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="rgba(255,255,255,.07)" stroke-width="2"/></pattern></defs>
+          <rect width="500" height="380" fill="url(#g2)"/>
+          <!-- fake roads -->
+          <path d="M0 120 Q 200 90 500 150" stroke="rgba(255,255,255,.12)" stroke-width="14" fill="none"/>
+          <path d="M140 0 Q 170 200 110 380" stroke="rgba(255,255,255,.12)" stroke-width="14" fill="none"/>
+          <path d="M0 300 Q 260 260 500 320" stroke="rgba(255,255,255,.12)" stroke-width="10" fill="none"/>
+          <path d="M360 0 Q 330 190 400 380" stroke="rgba(255,255,255,.12)" stroke-width="10" fill="none"/>
+          <path id="route" d="M70 60 L 250 80 L 420 120 L 380 260 L 200 300 L 80 230" fill="none" stroke="#ffc20e" stroke-width="4" stroke-dasharray="3 12" stroke-linecap="round"/>
+          <g id="stops"></g>
+          <g id="moto"><circle r="20" fill="#ffc20e"/><text y="8" text-anchor="middle" font-size="22">🛵</text></g>
+        </svg>
+      </div>
+      <div class="panel" id="panel" aria-live="polite"></div>
+    </div>
+    <div class="progress" id="progress"></div>
+  </div>
+</section>
+
+<!-- MISSIONS -->
+<section id="missions">
+  <div class="wrap">
+    <span class="kicker">Tes missions</span>
+    <h2>Ce que nous <span class="hl">attendons de toi</span></h2>
+    <p class="lead">Ouvre chaque mission pour voir le détail.</p>
+    <div class="missions" id="missionList"></div>
+  </div>
+</section>
+
+<!-- GAME -->
+<section class="game" id="defi">
+  <div class="wrap">
+    <span class="kicker">Mini-défi</span>
+    <h2>Saurais-tu <span class="hl">convaincre ?</span></h2>
+    <p class="lead">Tu es devant un gérant. Il a des objections. Choisis la meilleure réponse et essaie de signer les 4 partenaires.</p>
+    <div class="game-card" id="game"></div>
+  </div>
+</section>
+
+<!-- PROFILE -->
+<section id="profil">
+  <div class="wrap">
+    <span class="kicker">Profil recherché</span>
+    <h2>Est-ce que <span class="hl">c'est toi ?</span></h2>
+    <p class="lead">Coche ce qui te ressemble.</p>
+    <div class="check-grid" id="checks"></div>
+    <div class="meter">
+      <p id="meterTxt">Coche les qualités qui te correspondent.</p>
+      <div class="bar"><i id="meterBar"></i></div>
+    </div>
+    <p class="plus-note">⭐ Une expérience en vente, en prospection ou en relation commerciale est un plus, mais pas obligatoire si tu as la motivation et le sens du contact.</p>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section style="background:#fff">
+  <div class="wrap">
+    <span class="kicker">Recrutement</span>
+    <h2>Comment <span class="hl">ça se passe</span></h2>
+    <div class="steps">
+      <div class="step reveal"><h3>Tu envoies ton CV</h3><p>Par email à contact@livservice.com, avec quelques mots sur toi.</p></div>
+      <div class="step reveal"><h3>On étudie ton profil</h3><p>Relationnel, motivation, connaissance de Yaoundé et expérience éventuelle.</p></div>
+      <div class="step reveal"><h3>On se rencontre</h3><p>Si ton profil nous intéresse, nous te contactons pour un entretien.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLY -->
+<section class="apply" id="postuler">
+  <div class="wrap">
+    <h2>Comment postuler ?</h2>
+    <div class="mailbox">
+      <div class="lbl">Envoie ton CV à l'adresse suivante :</div>
+      <a class="mail" href="mailto:contact@livservice.com?subject=Candidature%20-%20Charg%C3%A9(e)%20de%20partenariats%20terrain">contact@livservice.com</a>
+      <div class="mail-actions">
+        <a class="btn btn-dark" href="mailto:contact@livservice.com?subject=Candidature%20-%20Charg%C3%A9(e)%20de%20partenariats%20terrain">✉️ Écrire l'email</a>
+        <button class="btn btn-dark" id="copyBtn" type="button">📋 Copier l'adresse</button>
+      </div>
+    </div>
+    <ul class="dossier">
+      <li><b>Ton CV</b> : parcours, expériences, langues parlées.</li>
+      <li><b>Objet du mail</b> : « Candidature - Chargé(e) de partenariats terrain ».</li>
+      <li><b>Un petit plus</b> : dis-nous en 3 lignes pourquoi tu es fait(e) pour le terrain.</li>
+    </ul>
+  </div>
+</section>
+
+<footer><div style="margin-bottom:10px;display:flex;gap:16px;justify-content:center"><a href="https://www.instagram.com/liv.services?srtk=MWsycGsycXMzZDZhNw%3D%3D" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@_liv_eats_?_r=1&amp;_t=ZS-9ActK0Abysu" target="_blank" rel="noopener">TikTok</a><a href="https://www.facebook.com/share/1EQRnmpQCa/" target="_blank" rel="noopener">Facebook</a></div>Liv Services · LIV EATS · Yaoundé, Cameroun</footer>
+
+<div class="sticky" id="sticky"><a class="btn btn-y" href="#postuler">Postuler maintenant</a></div>
+<div class="toast" id="toast">Adresse copiée ✓</div>
+
+<script>
+/* ---------- JOURNÉE TYPE ---------- */
+const stops=[
+  {x:70,y:60,t:"8h00",name:"Briefing",where:"Bureau Liv Services",txt:"Tu prépares ta tournée : liste des commerces à visiter, quartiers, objectifs du jour.",li:["Point rapide avec l'équipe","Choix du quartier du jour","Supports de présentation prêts"]},
+  {x:250,y:80,t:"9h30",name:"Prospection",where:"Restaurants · Bastos",txt:"Tu repères les restaurants et commerces qui ne sont pas encore partenaires et tu vas à leur rencontre.",li:["Repérer les bons établissements","Trouver le gérant ou le décideur","Faire une première bonne impression"]},
+  {x:420,y:120,t:"11h30",name:"Présentation",where:"Boutique · Mvan",txt:"Tu présentes l'offre Liv Services de façon simple et claire : ce que le commerçant y gagne.",li:["Pitch court et convaincant","Montrer l'application Liv Eats","Répondre aux questions et objections"]},
+  {x:380,y:260,t:"14h00",name:"Négociation & signature",where:"Restaurant · Essos",txt:"Le gérant est intéressé : tu finalises les conditions et tu fais signer le partenariat.",li:["Expliquer les conditions","Lever les derniers freins","Signer et récupérer les informations"]},
+  {x:200,y:300,t:"16h00",name:"Suivi partenaire",where:"Snack · Biyem-Assi",txt:"Tu repasses voir un partenaire récent pour t'assurer que tout se passe bien.",li:["Vérifier que les commandes tournent","Écouter les besoins et remarques","Entretenir une relation de confiance"]},
+  {x:80,y:230,t:"17h30",name:"Reporting",where:"Fin de tournée",txt:"Tu fais le point sur ta journée et tu le transmets à l'équipe.",li:["Visites effectuées","Contrats signés","Pistes à relancer demain"]}
+];
+const gStops=document.getElementById('stops'),panel=document.getElementById('panel'),moto=document.getElementById('moto'),prog=document.getElementById('progress');
+let cur=0;
+stops.forEach((s,i)=>{
+  const g=document.createElementNS('http://www.w3.org/2000/svg','g');
+  g.setAttribute('class','stop');g.setAttribute('transform',`translate(${s.x} ${s.y})`);g.setAttribute('tabindex','0');
+  g.innerHTML=`<circle class="dot" r="14"/><text class="num" y="4" text-anchor="middle">${i+1}</text><text y="${s.y>200?34:-22}" text-anchor="middle">${s.name.split(' ')[0]}</text>`;
+  g.addEventListener('click',()=>go(i));
+  g.addEventListener('keydown',e=>{if(e.key==='Enter')go(i)});
+  gStops.appendChild(g);
+  prog.appendChild(document.createElement('i'));
+});
+function go(i){
+  cur=i;const s=stops[i];
+  moto.style.transform=`translate(${s.x+22}px,${s.y-22}px)`;
+  [...gStops.children].forEach((g,k)=>g.classList.toggle('active',k===i));
+  [...prog.children].forEach((b,k)=>b.classList.toggle('on',k<=i));
+  panel.innerHTML=`<div class="fade"><span class="time">${s.t}</span><h3>${s.name}</h3><div class="where">📍 ${s.where}</div><p>${s.txt}</p><ul>${s.li.map(l=>`<li>${l}</li>`).join('')}</ul></div>
+  <div class="panel-nav"><button id="pv" ${i===0?'disabled':''}>← Précédent</button><button class="primary" id="nx">${i===stops.length-1?'Recommencer':'Étape suivante →'}</button></div>`;
+  document.getElementById('pv').onclick=()=>go(i-1);
+  document.getElementById('nx').onclick=()=>go(i===stops.length-1?0:i+1);
+}
+moto.style.transform=`translate(${stops[0].x+22}px,${stops[0].y-22}px)`;
+go(0);
+
+/* ---------- MISSIONS ---------- */
+const missions=[
+  {ic:"🔎",t:"Prospection terrain",s:"Restaurants, commerces, boutiques, prestataires",li:["Identifier les établissements à fort potentiel dans les différents quartiers de Yaoundé","Aller à la rencontre des gérants et décideurs","Tenir à jour une liste de prospects et de pistes à relancer"],e:"de l'énergie, de l'audace et de la régularité dans les visites."},
+  {ic:"🤝",t:"Présentation & négociation",s:"Pitch de l'offre Liv Services, signature des partenariats",li:["Présenter clairement les avantages de Liv Services et de Liv Eats","Répondre aux questions et lever les objections","Négocier et conclure la signature des partenariats"],e:"un discours clair, de la persuasion et le sens de la conclusion."},
+  {ic:"💚",t:"Suivi & fidélisation",s:"Accompagnement, relation de proximité, remontée des besoins",li:["Accompagner les nouveaux partenaires dans leurs premiers pas","Rester en contact régulier pour entretenir une bonne relation","Faire remonter leurs besoins et remarques à l'équipe"],e:"de la fiabilité, de l'écoute et le sens du service."},
+  {ic:"📊",t:"Reporting d'activité",s:"Visites, contrats signés, objectifs",li:["Rendre compte de tes visites et de tes résultats","Suivre tes objectifs de signatures","Partager les retours du terrain pour améliorer l'offre"],e:"de l'organisation, de l'honnêteté et de la rigueur."}
+];
+const ml=document.getElementById('missionList');
+missions.forEach((m,i)=>{
+  const d=document.createElement('div');d.className='mission reveal';
+  d.innerHTML=`<button aria-expanded="false"><span class="ic">${m.ic}</span><span><h3>${m.t}</h3><small>${m.s}</small></span><span class="plus">+</span></button>
+  <div class="body"><div class="inner"><ul>${m.li.map(l=>`<li>${l}</li>`).join('')}</ul><div class="expect"><b>Ce qu'on attend concrètement :</b> ${m.e}</div></div></div>`;
+  const b=d.querySelector('button'),body=d.querySelector('.body');
+  b.onclick=()=>{const o=d.classList.toggle('open');b.setAttribute('aria-expanded',o);body.style.maxHeight=o?body.scrollHeight+'px':0};
+  ml.appendChild(d);
+});
+
+/* ---------- MINI-DÉFI ---------- */
+const rounds=[
+  {who:"Gérante d'un restaurant",av:"👩🏾‍🍳",q:"« J'ai déjà assez de clients, je n'ai pas besoin de vous. »",c:[
+    ["D'accord, désolé de vous avoir dérangée.",0,"Tu abandonnes trop vite : une objection, c'est souvent une porte entrouverte."],
+    ["Justement, avec Liv Eats, vos clients peuvent aussi commander depuis chez eux, sans prendre de place dans votre salle.",1,"Bien joué ! Tu transformes l'objection en avantage concret pour elle."],
+    ["Tous vos concurrents sont déjà chez nous, vous allez perdre vos clients.",0,"Faire peur ou mettre la pression abîme la relation. Mieux vaut montrer un bénéfice."]]},
+  {who:"Patron d'un snack",av:"👨🏾‍🍳",q:"« Je n'ai pas le temps de m'occuper des livraisons. »",c:[
+    ["Vous n'avez rien à gérer : nos livreurs viennent récupérer la commande et la livrent.",1,"Parfait ! Tu lèves le frein en montrant que Liv Services s'en charge."],
+    ["Il faudra juste embaucher quelqu'un pour ça.",0,"Au contraire : l'intérêt est justement qu'il n'a pas à s'en occuper."],
+    ["Je repasserai quand vous aurez le temps.",0,"Tu perds l'occasion : sa remarque est en fait un argument pour toi."]]},
+  {who:"Gérant d'une boutique",av:"🧔🏾",q:"« Je ne connais pas votre application. »",c:[
+    ["C'est normal, ce n'est pas très connu.",0,"Ne dévalorise jamais ton offre devant un prospect."],
+    ["Je vous laisse chercher sur internet.",0,"Tu es là pour lui montrer, pas pour le laisser seul."],
+    ["Je vous la montre tout de suite sur mon téléphone, ça prend deux minutes.",1,"Excellent ! Une démonstration concrète vaut mieux que de longs discours."]]},
+  {who:"Propriétaire d'un café",av:"👩🏾",q:"« Je vais réfléchir… »",c:[
+    ["Bien sûr. Qu'est-ce qui vous fait encore hésiter ? Je peux vous répondre maintenant.",1,"Très bien ! Tu identifies le vrai frein avec bienveillance, sans forcer."],
+    ["Si vous ne signez pas aujourd'hui, l'offre ne sera plus valable.",0,"Une fausse urgence fait perdre la confiance du partenaire."],
+    ["D'accord, au revoir.",0,"Pense au moins à fixer une date pour repasser : le suivi fait signer."]]}
+];
+const gameEl=document.getElementById('game');let r=0,score=0;const results=[];
+function renderRound(){
+  if(r>=rounds.length){
+    const msg=score===4?"Bravo, 4 partenaires signés ! Tu as clairement l'âme d'un(e) chargé(e) de partenariats. Il ne reste plus qu'à postuler 😉":score>=2?`${score} partenaires signés sur 4 : tu as de bons réflexes. Le reste s'apprend sur le terrain, avec nous.`:`${score} sur 4 : pas grave, ça s'apprend ! Si tu as l'envie et le contact facile, postule quand même.`;
+    gameEl.innerHTML=`<div class="fade"><div class="signed" style="margin-bottom:14px">${results.map(x=>`<span class="${x?'ok':''}">${x?'✓':'✕'}</span>`).join('')}</div><h3 style="font-weight:900;font-size:22px;text-transform:uppercase">${score}/4 partenaires signés</h3><p style="margin:10px 0 18px;color:var(--muted)">${msg}</p><div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-y" href="#postuler">Postuler</a><button class="btn btn-g" id="replay">Rejouer</button></div></div>`;
+    document.getElementById('replay').onclick=()=>{r=0;score=0;results.length=0;renderRound()};
+    return;
+  }
+  const R=rounds[r];
+  gameEl.innerHTML=`<div class="fade"><div class="scene"><div class="avatar">${R.av}</div><div class="bubble"><small>${R.who}</small>${R.q}</div></div>
+  <div class="choices">${R.c.map((c,i)=>`<button class="choice" data-i="${i}">${c[0]}</button>`).join('')}</div>
+  <div class="feedback" id="fb"></div>
+  <div class="game-foot"><span class="score">Partenaire ${r+1}/4</span><div class="signed">${rounds.map((_,k)=>`<span class="${results[k]?'ok':''}">${k<results.length?(results[k]?'✓':'✕'):''}</span>`).join('')}</div></div></div>`;
+  gameEl.querySelectorAll('.choice').forEach(b=>b.onclick=()=>{
+    const c=R.c[+b.dataset.i];
+    gameEl.querySelectorAll('.choice').forEach((x,k)=>{x.disabled=true;if(R.c[k][1])x.classList.add('good')});
+    if(!c[1])b.classList.add('bad');
+    if(c[1])score++;results.push(!!c[1]);
+    const fb=document.getElementById('fb');fb.className='feedback show '+(c[1]?'ok':'ko');
+    fb.innerHTML=`<b>${c[1]?'Signé ! ':'Raté… '}</b>${c[2]}<div style="margin-top:12px"><button class="btn btn-g" id="next" style="font-size:13px;padding:10px 18px">${r===rounds.length-1?'Voir mon résultat':'Partenaire suivant →'}</button></div>`;
+    document.getElementById('next').onclick=()=>{r++;renderRound()};
+  });
+}
+renderRound();
+
+/* ---------- PROFIL ---------- */
+const traits=[
+  ["Excellent relationnel","Tu vas facilement vers les gens et tu crées la confiance."],
+  ["Sens de la persuasion","Tu sais présenter une offre et convaincre."],
+  ["Dynamique","Bouger toute la journée ne te fait pas peur."],
+  ["Autonome","Tu organises ta tournée sans qu'on soit derrière toi."],
+  ["Orienté(e) résultats","Les objectifs te motivent, tu aimes conclure."],
+  ["Bonne connaissance de Yaoundé","Les quartiers et les bons coins, tu connais."]
+];
+const ckWrap=document.getElementById('checks'),bar=document.getElementById('meterBar'),mt=document.getElementById('meterTxt');
+traits.forEach(t=>{
+  const l=document.createElement('label');l.className='ck';
+  l.innerHTML=`<input type="checkbox"><span class="box">✓</span><span><b>${t[0]}</b><span class="d">${t[1]}</span></span>`;
+  l.querySelector('input').onchange=e=>{l.classList.toggle('on',e.target.checked);upd()};
+  ckWrap.appendChild(l);
+});
+function upd(){
+  const n=ckWrap.querySelectorAll('input:checked').length,p=Math.round(n/traits.length*100);
+  bar.style.width=p+'%';
+  mt.innerHTML=n===0?"Coche les qualités qui te correspondent.":n<3?`${n}/6 : c'est un début, la motivation fait le reste.`:n<6?`${n}/6 : tu as un vrai profil terrain !`:`6/6 : on t'attend ! <a href="#postuler" style="color:var(--green-d)">Postule maintenant →</a>`;
+}
+
+
+/* ---------- VIDÉO ---------- */
+const vid=document.getElementById('vid'),snd=document.getElementById('sound');
+new IntersectionObserver(e=>{if(e[0].isIntersecting){vid.play().catch(()=>{})}else vid.pause()},{threshold:.4}).observe(vid);
+snd.onclick=()=>{vid.muted=!vid.muted;snd.textContent=vid.muted?'🔇 Son':'🔊 Son';if(!vid.muted)vid.play().catch(()=>{})};
+vid.onclick=()=>vid.paused?vid.play():vid.pause();
+/* ---------- COPY / STICKY / REVEAL ---------- */
+const toast=document.getElementById('toast');
+document.getElementById('copyBtn').onclick=async()=>{
+  try{await navigator.clipboard.writeText('contact@livservice.com')}catch(e){const t=document.createElement('textarea');t.value='contact@livservice.com';document.body.appendChild(t);t.select();try{document.execCommand('copy')}catch(_){}t.remove()}
+  toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),1800);
+};
+const sticky=document.getElementById('sticky'),applyS=document.getElementById('postuler');
+let applyVisible=false;
+new IntersectionObserver(e=>{applyVisible=e[0].isIntersecting;onScroll()}).observe(applyS);
+function onScroll(){sticky.classList.toggle('show',scrollY>500&&!applyVisible)}
+addEventListener('scroll',onScroll,{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
