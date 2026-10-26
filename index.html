@@ -85,8 +85,9 @@ footer .fsoc a{display:inline-flex;align-items:center;gap:6px;text-decoration:no
 .chip{background:var(--green-l);color:var(--green-d);font-weight:700;font-size:13px;padding:6px 12px;border-radius:999px}
 .why{background:var(--green-dd);color:#fff;border-radius:var(--r);padding:24px}
 .why h3{font-size:18px;font-weight:900;text-transform:uppercase;margin-bottom:10px;color:var(--yellow)}
-.why li{list-style:none;padding:8px 0;border-bottom:1px dashed rgba(255,255,255,.2);font-weight:600;font-size:15px}
+.why li{list-style:none;padding:8px 0 8px 22px;position:relative;border-bottom:1px dashed rgba(255,255,255,.2);font-weight:600;font-size:15px}
 .why li:last-child{border:0}
+.why li::before{content:"";position:absolute;left:0;top:17px;width:8px;height:8px;border-radius:50%;background:var(--yellow)}
 
 /* role */
 .role{background:#fff}
@@ -205,7 +206,7 @@ footer .fsoc a{display:inline-flex;align-items:center;gap:6px;text-decoration:no
 .btn-dark{background:var(--green-dd);color:#fff}
 .dossier{max-width:620px;margin:26px auto 0;text-align:left;background:rgba(0,0,0,.15);border-radius:16px;padding:18px 20px}
 .dossier li{list-style:none;padding:5px 0 5px 24px;position:relative;font-weight:600}
-.dossier li::before{content:"📎";position:absolute;left:0}
+.dossier li::before{content:"";position:absolute;left:4px;top:13px;width:10px;height:10px;border-radius:3px;background:var(--yellow)}
 .toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:12px 20px;border-radius:999px;font-weight:700;opacity:0;pointer-events:none;transition:all .3s;z-index:60}
 .toast.show{opacity:1;transform:translateX(-50%)}
 
@@ -218,6 +219,14 @@ footer{background:var(--green-dd);color:#cfe9da;text-align:center;padding:26px 1
 .reveal.in{opacity:1;transform:none}
 
 
+
+svg.i{width:1.1em;height:1.1em;flex:0 0 auto;vertical-align:-.18em}
+.loc svg.i,.where svg.i{margin-right:2px}
+.badge-float .bt{display:flex;align-items:center;gap:6px}.badge-float svg.i{color:var(--green)}
+.mission .ic{color:#fff}.mission .ic svg.i{width:26px;height:26px}
+.avatar{color:#fff}.avatar svg.i{width:28px;height:28px}
+.btn svg.i,.sound svg.i{width:18px;height:18px}
+.sound{display:inline-flex;align-items:center;gap:6px}
 /* field video */
 .field{background:#fff;border-top:1px solid var(--line)}
 .field-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:center}
@@ -260,7 +269,7 @@ footer{background:var(--green-dd);color:#cfe9da;text-align:center;padding:26px 1
       <div>
         <h1><span class="s1">Liv Services</span><span class="s2">Recrute</span></h1>
         <div class="pill">Un(e) chargé(e) de partenariats terrain</div>
-        <div><span class="loc">📍 Yaoundé</span></div>
+        <div><span class="loc"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Yaoundé</span></div>
         <p class="tag">Tu aimes le contact, tu sais convaincre et tu n'as pas peur du terrain ? Rejoins notre équipe !</p>
         <div class="hero-ctas">
           <a class="btn btn-y" href="#postuler">Postuler</a>
@@ -269,8 +278,8 @@ footer{background:var(--green-dd);color:#cfe9da;text-align:center;padding:26px 1
       </div>
 
       <div class="street" aria-hidden="true">
-        <div class="badge-float b1">🤝 Partenariat signé !<small>Restaurant · Bastos</small></div>
-        <div class="badge-float b2">📍 Prochaine visite<small>Boutique · Mvan</small></div>
+        <div class="badge-float b1"><span class="bt"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg>Partenariat signé !</span><small>Restaurant · Bastos</small></div>
+        <div class="badge-float b2"><span class="bt"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Prochaine visite</span><small>Boutique · Mvan</small></div>
         <svg viewBox="0 0 440 420">
           <defs>
             <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="2"/></pattern>
@@ -279,11 +288,11 @@ footer{background:var(--green-dd);color:#cfe9da;text-align:center;padding:26px 1
           <rect x="10" y="20" width="420" height="380" rx="30" fill="url(#grid)"/>
           <path d="M60 330 C 140 330, 150 220, 230 220 S 330 110, 380 90" fill="none" stroke="#ffc20e" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 16"/>
           <!-- shops -->
-          <g transform="translate(36 330)"><circle class="ping" r="18" fill="#ffc20e"/><circle r="14" fill="#fff"/><text y="5" text-anchor="middle" font-size="14">🍲</text></g>
-          <g transform="translate(230 220)"><circle class="ping" r="18" fill="#ffc20e" style="animation-delay:.7s"/><circle r="14" fill="#fff"/><text y="5" text-anchor="middle" font-size="14">🏪</text></g>
-          <g transform="translate(390 84)"><circle class="ping" r="18" fill="#ffc20e" style="animation-delay:1.4s"/><circle r="14" fill="#fff"/><text y="5" text-anchor="middle" font-size="14">☕</text></g>
+          <g transform="translate(36 330)"><circle class="ping" r="18" fill="#ffc20e"/><circle r="14" fill="#fff"/><svg x="-8" y="-8" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#067a37" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg></g>
+          <g transform="translate(230 220)"><circle class="ping" r="18" fill="#ffc20e" style="animation-delay:.7s"/><circle r="14" fill="#fff"/><svg x="-8" y="-8" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#067a37" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1.5-5h15L21 9"/><path d="M4 9v11h16V9"/><path d="M3 9h18"/><path d="M9 20v-6h6v6"/></svg></g>
+          <g transform="translate(390 84)"><circle class="ping" r="18" fill="#ffc20e" style="animation-delay:1.4s"/><circle r="14" fill="#fff"/><svg x="-8" y="-8" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#067a37" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><path d="M6 2v2"/><path d="M10 2v2"/><path d="M14 2v2"/></svg></g>
           <!-- rider -->
-          <g class="rider"><circle r="24" fill="#fff"/><text y="9" text-anchor="middle" font-size="26">🧑🏾‍💼</text></g>
+          <g class="rider"><circle r="24" fill="#fff"/><svg x="-12" y="-12" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#067a37" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></g>
         </svg>
       </div>
     </div>
@@ -311,10 +320,10 @@ footer{background:var(--green-dd);color:#cfe9da;text-align:center;padding:26px 1
       <div class="why">
         <h3>Ce que tu vas proposer aux commerçants</h3>
         <ul>
-          <li>🛵 Une flotte de livreurs réactive</li>
-          <li>📱 Une visibilité sur l'application Liv Eats</li>
-          <li>📦 Une plateforme pour gérer leurs commandes</li>
-          <li>📈 De nouveaux clients, sans gérer la livraison</li>
+          <li>Une flotte de livreurs réactive</li>
+          <li>Une visibilité sur l'application Liv Eats</li>
+          <li>Une plateforme pour gérer leurs commandes</li>
+          <li>De nouveaux clients, sans gérer la livraison</li>
         </ul>
       </div>
     </div>
@@ -355,7 +364,7 @@ footer{background:var(--green-dd);color:#cfe9da;text-align:center;padding:26px 1
   <div class="wrap field-grid">
     <div class="phone reveal">
       <video id="vid" src="images/terrain.mp4" poster="images/terrain-poster.jpg" playsinline muted loop preload="metadata"></video>
-      <button class="sound" id="sound" type="button" aria-label="Activer le son">🔇 Son</button>
+      <button class="sound" id="sound" type="button" aria-label="Activer le son"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="m22 9-6 6"/><path d="m16 9 6 6"/></svg>Son</button>
     </div>
     <div class="reveal">
       <span class="kicker">En images</span>
@@ -389,7 +398,7 @@ footer{background:var(--green-dd);color:#cfe9da;text-align:center;padding:26px 1
           <path d="M360 0 Q 330 190 400 380" stroke="rgba(255,255,255,.12)" stroke-width="10" fill="none"/>
           <path id="route" d="M70 60 L 250 80 L 420 120 L 380 260 L 200 300 L 80 230" fill="none" stroke="#ffc20e" stroke-width="4" stroke-dasharray="3 12" stroke-linecap="round"/>
           <g id="stops"></g>
-          <g id="moto"><circle r="20" fill="#ffc20e"/><text y="8" text-anchor="middle" font-size="22">🛵</text></g>
+          <g id="moto"><circle r="20" fill="#ffc20e"/><svg x="-10" y="-10" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#04542a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 22 2l-9 19-2-8-8-2Z"/></svg></g>
         </svg>
       </div>
       <div class="panel" id="panel" aria-live="polite"></div>
@@ -454,8 +463,8 @@ footer{background:var(--green-dd);color:#cfe9da;text-align:center;padding:26px 1
       <div class="lbl">Envoie ton CV à l'adresse suivante :</div>
       <a class="mail" href="mailto:contact@livservice.com?subject=Candidature%20-%20Charg%C3%A9(e)%20de%20partenariats%20terrain">contact@livservice.com</a>
       <div class="mail-actions">
-        <a class="btn btn-dark" href="mailto:contact@livservice.com?subject=Candidature%20-%20Charg%C3%A9(e)%20de%20partenariats%20terrain">✉️ Écrire l'email</a>
-        <button class="btn btn-dark" id="copyBtn" type="button">📋 Copier l'adresse</button>
+        <a class="btn btn-dark" href="mailto:contact@livservice.com?subject=Candidature%20-%20Charg%C3%A9(e)%20de%20partenariats%20terrain"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>Écrire l'email</a>
+        <button class="btn btn-dark" id="copyBtn" type="button"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>Copier l'adresse</button>
       </div>
     </div>
     <ul class="dossier">
@@ -497,7 +506,7 @@ function go(i){
   moto.style.transform=`translate(${s.x+22}px,${s.y-22}px)`;
   [...gStops.children].forEach((g,k)=>g.classList.toggle('active',k===i));
   [...prog.children].forEach((b,k)=>b.classList.toggle('on',k<=i));
-  panel.innerHTML=`<div class="fade"><span class="time">${s.t}</span><h3>${s.name}</h3><div class="where">📍 ${s.where}</div><p>${s.txt}</p><ul>${s.li.map(l=>`<li>${l}</li>`).join('')}</ul></div>
+  panel.innerHTML=`<div class="fade"><span class="time">${s.t}</span><h3>${s.name}</h3><div class="where"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>${s.where}</div><p>${s.txt}</p><ul>${s.li.map(l=>`<li>${l}</li>`).join('')}</ul></div>
   <div class="panel-nav"><button id="pv" ${i===0?'disabled':''}>← Précédent</button><button class="primary" id="nx">${i===stops.length-1?'Recommencer':'Étape suivante →'}</button></div>`;
   document.getElementById('pv').onclick=()=>go(i-1);
   document.getElementById('nx').onclick=()=>go(i===stops.length-1?0:i+1);
@@ -507,10 +516,10 @@ go(0);
 
 /* ---------- MISSIONS ---------- */
 const missions=[
-  {ic:"🔎",t:"Prospection terrain",s:"Restaurants, commerces, boutiques, prestataires",li:["Identifier les établissements à fort potentiel dans les différents quartiers de Yaoundé","Aller à la rencontre des gérants et décideurs","Tenir à jour une liste de prospects et de pistes à relancer"],e:"de l'énergie, de l'audace et de la régularité dans les visites."},
-  {ic:"🤝",t:"Présentation & négociation",s:"Pitch de l'offre Liv Services, signature des partenariats",li:["Présenter clairement les avantages de Liv Services et de Liv Eats","Répondre aux questions et lever les objections","Négocier et conclure la signature des partenariats"],e:"un discours clair, de la persuasion et le sens de la conclusion."},
-  {ic:"💚",t:"Suivi & fidélisation",s:"Accompagnement, relation de proximité, remontée des besoins",li:["Accompagner les nouveaux partenaires dans leurs premiers pas","Rester en contact régulier pour entretenir une bonne relation","Faire remonter leurs besoins et remarques à l'équipe"],e:"de la fiabilité, de l'écoute et le sens du service."},
-  {ic:"📊",t:"Reporting d'activité",s:"Visites, contrats signés, objectifs",li:["Rendre compte de tes visites et de tes résultats","Suivre tes objectifs de signatures","Partager les retours du terrain pour améliorer l'offre"],e:"de l'organisation, de l'honnêteté et de la rigueur."}
+  {ic:'<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>',t:"Prospection terrain",s:"Restaurants, commerces, boutiques, prestataires",li:["Identifier les établissements à fort potentiel dans les différents quartiers de Yaoundé","Aller à la rencontre des gérants et décideurs","Tenir à jour une liste de prospects et de pistes à relancer"],e:"de l'énergie, de l'audace et de la régularité dans les visites."},
+  {ic:'<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg>',t:"Présentation & négociation",s:"Pitch de l'offre Liv Services, signature des partenariats",li:["Présenter clairement les avantages de Liv Services et de Liv Eats","Répondre aux questions et lever les objections","Négocier et conclure la signature des partenariats"],e:"un discours clair, de la persuasion et le sens de la conclusion."},
+  {ic:'<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></svg>',t:"Suivi & fidélisation",s:"Accompagnement, relation de proximité, remontée des besoins",li:["Accompagner les nouveaux partenaires dans leurs premiers pas","Rester en contact régulier pour entretenir une bonne relation","Faire remonter leurs besoins et remarques à l'équipe"],e:"de la fiabilité, de l'écoute et le sens du service."},
+  {ic:'<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>',t:"Reporting d'activité",s:"Visites, contrats signés, objectifs",li:["Rendre compte de tes visites et de tes résultats","Suivre tes objectifs de signatures","Partager les retours du terrain pour améliorer l'offre"],e:"de l'organisation, de l'honnêteté et de la rigueur."}
 ];
 const ml=document.getElementById('missionList');
 missions.forEach((m,i)=>{
@@ -524,19 +533,19 @@ missions.forEach((m,i)=>{
 
 /* ---------- MINI-DÉFI ---------- */
 const rounds=[
-  {who:"Gérante d'un restaurant",av:"👩🏾‍🍳",q:"« J'ai déjà assez de clients, je n'ai pas besoin de vous. »",c:[
+  {who:"Gérante d'un restaurant",av:'<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>',q:"« J'ai déjà assez de clients, je n'ai pas besoin de vous. »",c:[
     ["D'accord, désolé de vous avoir dérangée.",0,"Tu abandonnes trop vite : une objection, c'est souvent une porte entrouverte."],
     ["Justement, avec Liv Eats, vos clients peuvent aussi commander depuis chez eux, sans prendre de place dans votre salle.",1,"Bien joué ! Tu transformes l'objection en avantage concret pour elle."],
     ["Tous vos concurrents sont déjà chez nous, vous allez perdre vos clients.",0,"Faire peur ou mettre la pression abîme la relation. Mieux vaut montrer un bénéfice."]]},
-  {who:"Patron d'un snack",av:"👨🏾‍🍳",q:"« Je n'ai pas le temps de m'occuper des livraisons. »",c:[
+  {who:"Patron d'un snack",av:'<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>',q:"« Je n'ai pas le temps de m'occuper des livraisons. »",c:[
     ["Vous n'avez rien à gérer : nos livreurs viennent récupérer la commande et la livrent.",1,"Parfait ! Tu lèves le frein en montrant que Liv Services s'en charge."],
     ["Il faudra juste embaucher quelqu'un pour ça.",0,"Au contraire : l'intérêt est justement qu'il n'a pas à s'en occuper."],
     ["Je repasserai quand vous aurez le temps.",0,"Tu perds l'occasion : sa remarque est en fait un argument pour toi."]]},
-  {who:"Gérant d'une boutique",av:"🧔🏾",q:"« Je ne connais pas votre application. »",c:[
+  {who:"Gérant d'une boutique",av:'<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>',q:"« Je ne connais pas votre application. »",c:[
     ["C'est normal, ce n'est pas très connu.",0,"Ne dévalorise jamais ton offre devant un prospect."],
     ["Je vous laisse chercher sur internet.",0,"Tu es là pour lui montrer, pas pour le laisser seul."],
     ["Je vous la montre tout de suite sur mon téléphone, ça prend deux minutes.",1,"Excellent ! Une démonstration concrète vaut mieux que de longs discours."]]},
-  {who:"Propriétaire d'un café",av:"👩🏾",q:"« Je vais réfléchir… »",c:[
+  {who:"Propriétaire d'un café",av:'<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>',q:"« Je vais réfléchir… »",c:[
     ["Bien sûr. Qu'est-ce qui vous fait encore hésiter ? Je peux vous répondre maintenant.",1,"Très bien ! Tu identifies le vrai frein avec bienveillance, sans forcer."],
     ["Si vous ne signez pas aujourd'hui, l'offre ne sera plus valable.",0,"Une fausse urgence fait perdre la confiance du partenaire."],
     ["D'accord, au revoir.",0,"Pense au moins à fixer une date pour repasser : le suivi fait signer."]]}
@@ -544,7 +553,7 @@ const rounds=[
 const gameEl=document.getElementById('game');let r=0,score=0;const results=[];
 function renderRound(){
   if(r>=rounds.length){
-    const msg=score===4?"Bravo, 4 partenaires signés ! Tu as clairement l'âme d'un(e) chargé(e) de partenariats. Il ne reste plus qu'à postuler 😉":score>=2?`${score} partenaires signés sur 4 : tu as de bons réflexes. Le reste s'apprend sur le terrain, avec nous.`:`${score} sur 4 : pas grave, ça s'apprend ! Si tu as l'envie et le contact facile, postule quand même.`;
+    const msg=score===4?"Bravo, 4 partenaires signés ! Tu as clairement l'âme d'un(e) chargé(e) de partenariats. Il ne reste plus qu'à postuler.":score>=2?`${score} partenaires signés sur 4 : tu as de bons réflexes. Le reste s'apprend sur le terrain, avec nous.`:`${score} sur 4 : pas grave, ça s'apprend ! Si tu as l'envie et le contact facile, postule quand même.`;
     gameEl.innerHTML=`<div class="fade"><div class="signed" style="margin-bottom:14px">${results.map(x=>`<span class="${x?'ok':''}">${x?'✓':'✕'}</span>`).join('')}</div><h3 style="font-weight:900;font-size:22px;text-transform:uppercase">${score}/4 partenaires signés</h3><p style="margin:10px 0 18px;color:var(--muted)">${msg}</p><div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-y" href="#postuler">Postuler</a><button class="btn btn-g" id="replay">Rejouer</button></div></div>`;
     document.getElementById('replay').onclick=()=>{r=0;score=0;results.length=0;renderRound()};
     return;
@@ -592,7 +601,7 @@ function upd(){
 /* ---------- VIDÉO ---------- */
 const vid=document.getElementById('vid'),snd=document.getElementById('sound');
 new IntersectionObserver(e=>{if(e[0].isIntersecting){vid.play().catch(()=>{})}else vid.pause()},{threshold:.4}).observe(vid);
-snd.onclick=()=>{vid.muted=!vid.muted;snd.textContent=vid.muted?'🔇 Son':'🔊 Son';if(!vid.muted)vid.play().catch(()=>{})};
+snd.onclick=()=>{vid.muted=!vid.muted;snd.innerHTML=vid.muted?'<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="m22 9-6 6"/><path d="m16 9 6 6"/></svg>Son':'<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg>Son';if(!vid.muted)vid.play().catch(()=>{})};
 vid.onclick=()=>vid.paused?vid.play():vid.pause();
 /* ---------- COPY / STICKY / REVEAL ---------- */
 const toast=document.getElementById('toast');
